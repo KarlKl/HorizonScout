@@ -1,0 +1,59 @@
+{
+    "author": "Karl",
+    "dependencies": {
+        "@rebble/clay": "^1.0.8",
+        "jszip": "^3.10.1"
+    },
+    "keywords": [],
+    "name": "horizon-scout",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable"
+        ],
+        "shortName": "Horizon Scout",
+        "displayName": "Horizon Scout",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "command",
+            "horizonData",
+            "peaksData",
+            "showHeader",
+            "showCardinals",
+            "showPeaks",
+            "horizonWindowDeg",
+            "language"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/menu-icon.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt",
+            "gabbro"
+        ],
+        "allPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery",
+            "gabbro",
+            "flint"
+        ],
+        "uuid": "1d1dc253-b4f4-4ad0-90db-d11db613422e",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
