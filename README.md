@@ -1,10 +1,9 @@
 # Horizon Scout
-> **Disclaimer: This Pebble app is not affiliated with or endorsed by PeakFinder.**
-
 This is an App inspired by the PeakFinder app for iOS and Android, which shows you the names of the mountains around you.
 
 ## Features
 - Shows the names of peaks around you, based on your location and compass heading.
+- Compass or Button-based navigation to explore the horizon.
 - Configurable settings for what information to show.
 - Uses the public API of the PeakFinder service to fetch data.
 

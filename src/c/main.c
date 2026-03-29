@@ -1,5 +1,4 @@
 #include <pebble.h>
-#include <string.h>
 
 #define COMMAND_HORIZON_DATA 1
 #define COMMAND_PEAKS_DATA 2
@@ -15,7 +14,12 @@
 #define HEADER_HEIGHT 20
 #define CARDINAL_LABEL_HEIGHT 20
 #define CARDINAL_TICK_HEIGHT 10
+// Platform-specific sizing: aplite has limited memory
+#ifdef PBL_PLATFORM_APLITE
+#define PEAKS_BUFFER_SIZE 2048
+#else
 #define PEAKS_BUFFER_SIZE 4096
+#endif
 #define MAX_PEAKS 96
 #define PEAK_NAME_MAX_LEN 28
 #define PEAK_LABEL_WIDTH 70

@@ -38,10 +38,6 @@
         },
         "sdkVersion": "3",
         "targetPlatforms": [
-            "basalt",
-            "gabbro"
-        ],
-        "allPlatforms": [
             "aplite",
             "basalt",
             "chalk",
