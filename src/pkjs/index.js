@@ -3,8 +3,14 @@ var Clay = require("@rebble/clay");
 var config = require("./config");
 var clayConfig = require("./clay-config");
 
-var sampleHorizonText = require("./testdata/horizon_sample");
-var sampleGazetteerText = require("./testdata/gazetteer_sample");
+try {
+  var sampleHorizonText = require("./testdata/horizon_sample");
+  var sampleGazetteerText = require("./testdata/gazetteer_sample");
+} catch (error) {
+  console.log("Sample data load failed: " + error.message);
+  var sampleHorizonText = "";
+  var sampleGazetteerText = "";
+}
 
 var getCurrentPosition = require("./services/geolocation").getCurrentPosition;
 var api = require("./services/peakfinderApi");
